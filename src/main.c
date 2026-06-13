@@ -23,6 +23,7 @@ void vApplicationIdleHook(void)
     }
 }
 
+/* Secuencia principal: rápido 5 s, lento 5 s y espera con lectura ADC por botón. */
 void app_main(void)
 {
     ESP_LOGI("MAIN", "=== Practica 1 - Ciclo LED/Sensor FreeRTOS ===");
