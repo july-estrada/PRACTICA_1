@@ -54,3 +54,7 @@ vTaskMonitor tiene mayor prioridad porque se encarga de detectar el botón y rep
 5. ¿Qué riesgo existe al leer una variable volatile desde dos tareas distintas sin protección? 
 Investiga el concepto de sección crítica. 
 El riesgo principal es que dos tareas accedan a la misma variable al mismo tiempo y se produzcan inconsistencias. Aunque volatile asegura que la variable se lea desde memoria, no protege contra condiciones de carrera. Una sección crítica es una parte del código donde se accede a recursos compartidos y debe ejecutarse sin interrupciones o sin acceso simultáneo de otras tareas, para evitar errores en los datos.
+
+## Estado
+
+Práctica validada en ESP32.
