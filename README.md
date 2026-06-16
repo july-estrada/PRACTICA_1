@@ -29,7 +29,7 @@ Botón BOOT	GPIO0
 ADC (Potenciómetro)	GPIO34
 
 
-Conclusiones
+Conclusiones del equipo:
 
 En esta primer práctica se implementó un sistema multitarea utilizando FreeRTOS sobre ESP32 mediante ESP-IDF y PlatformIO. Se comprobó que las tareas pueden coordinarse mediante variables compartidas para generar una secuencia de operación basada en estados: parpadeo rápido, parpadeo lento y espera. También se verificó el uso del ADC para leer un potenciómetro únicamente cuando el sistema se encuentra en espera y se presiona el botón BOOT. Además, se observó el funcionamiento del Idle Hook como una función ejecutada por FreeRTOS. La práctica permitió comprender el uso de tareas, retardos, prioridades y monitoreo por UART en un sistema embebido en tiempo real.
 
@@ -58,3 +58,21 @@ El riesgo principal es que dos tareas accedan a la misma variable al mismo tiemp
 ## Estado
 
 Práctica validada en ESP32.
+
+## Evidencias - Capturas de Pantalla Serial Monitor
+
+### Evidencia 1 - Inicio del sistema
+
+![Evidencia 1](img/Evidencia1_P1.jpeg)
+
+### Evidencia 2 - Lectura ADC 1
+
+![Evidencia 2](img/Evidencia2_P1.jpeg)
+
+### Evidencia 3 - Cambios Lectura ADC 2
+
+![Evidencia 3](img/Evidencia3_P1.jpeg)
+
+### Evidencia 4 - Monitoreo de tareas y prefijo 
+
+![Evidencia 4](img/Evidencia4_P1.jpg)
